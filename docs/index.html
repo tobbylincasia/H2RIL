@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>H2RIL Project Page</title>
+  <link rel="icon" type="image/x-icon" href="static/images/logo.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Hierarchical Human-to-Robot Imitation learning for Long-Horizon
+              Tasks via Cross-Domain Skill Alignment</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a target="_blank">Zhenyang Lin</a>,</span>
+                <span class="author-block">
+                  <a target="_blank">Yurou Chen</a>,</span>
+                  <span class="author-block">
+                    <a target="_blank">Zhi-Yong Liu</a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">State Key Laboratory of Multimodal Artificial Intelligence Systems,<br> Institute of Automation, Chinese Academy of Sciences
+                    </span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+
+                    <!-- Supplementary PDF link -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            For a general-purpose robot, it is desirable to imitate human demonstration videos that can effectively solve long-horizon tasks and perform novel ones. Recent advances in skill-based imitation learning have shown that extracting skill embedding from raw human videos is a promising paradigm to enable robots to cope with long-horizon tasks. However, generalization to unseen tasks in a different domain with a human prompt video poses a significant challenge due to the big embodiment and environment difference. To this end, we present Hierarchical Human-to-Robot Imitation Learning (H2RIL) that learns the mapping of cross-domain sensorimotor skills and utilizes it to generalize to unseen tasks given a human video in a different environment. To allow for generalizing zero-shot across environments and embodiments, H2RIL leverages task-agnostic play data for low-level policy training and paired human-robot data for both semantic and temporal skill embedding alignment. Extensive experiments in a simulated kitchen environment demonstrate that H2RIL significantly outperforms other prior baselines and is capable of generalizing to composable new tasks and adapting to Out-of-Distribution (OOD) tasks.  
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+      <div class="container">
+        <h2 class="title">H2RIL Overview</h2>
+          <div style="text-align: center;">
+            <!-- Teaser image goes here -->
+            <img src="static/images/overview.png" alt="Teaser Image" style="width:70%;height:auto; display: block; margin: 0 auto;">
+          </div>
+          <div class="content has-text-justified">
+            <p width="is-size-3">
+              We present H2RIL, a new skill-based imitation learning framework that leverages cross-
+              domain human videos to effectively generalize to unseen long-horizon tasks.
+              First, we extract task-relevant skill embeddings that capture the behavior
+              patterns and jointly learn the low-level skill-conditioned policy from on-
+              robot trajectories. Given paired human-to-robot data, H2RIL further trains
+              a robust cross-domain skill mapping policy, with objectives to ensure both
+              semantical and temporal skill embedding alignment.
+            </p>     
+            </div>
+      </div>
+  </div>
+</section>
+<!-- End image carousel -->
+
+
+
+
+<!-- Youtube video -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Model Architecture</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div style="text-align: center;">
+            <!-- Teaser image goes here -->
+            <img src="static/images/method.png" alt="Teaser Image" style="width:100%;height:auto; display: block; margin: 0 auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Cross-Domain Scenarios and Evaluation Tasks</h2>
+      <div style="text-align: center;">
+        <!-- Teaser image goes here -->
+        <img src="static/images/task.png" alt="Teaser Image" style="width:50%;height:auto; display: block; margin: 0 auto;">
+      </div>
+      <div class="content has-text-justified">
+        <p width="is-size-3">
+          (Left) Franka Kitchen: a complete task consists of a permutation of four subtasks. We
+          consider six sub-tasks: open the microwave (M), move the kettle (K), turn
+          on the top burner (T), turn on the bottom burner (B), turn on the light switch
+          (S), and open the hinge cabinet (H). (Right) Real-World Kitchen: there are
+          similar objects to interact with, but the arrangement and the embodiment
+          significantly differ from the simulated kitchen.
+        </p>     
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Quantitative Results</h2>
+      <div class="content has-text-justified">
+        <p width="is-size-3">
+          The primary experimental question in this paper is whether
+          the proposed H2RIL method is capable of solving downstream long-horizon tasks conditioned on a prompt human
+          video. We compare our method to prior skill-based imitation
+          learning with human videos in three levels of protocol: a
+          seen setting, in which the whole task is seen during skill
+          extraction, a composable setting, in which the permutation
+          of the 4 subtasks are unseen and the method is required to
+          generalize zero-shot to new tasks with a human video, and
+          an unseen setting, in which the part of subtasks remains
+          unavailable in the skill embedding space and the paired on-
+          robot demonstrations and human videos of the target task
+          are provided. During inference, the reward is the number of
+          subtasks completed in order.
+        </p>     
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div style="text-align: center;">
+            <!-- Teaser image goes here -->
+            <img src="static/images/table.png" alt="Teaser Image" style="width:85%;height:auto; display: block; margin: 0 auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Qualitative Analysis</h2>
+      <div style="text-align: center;">
+        <video muted="" autoplay="" loop="" width="80%">
+          <source src="static/videos/H2RIL_exp_video.mp4" type="video/mp4" />
+      </video>
+      </div>
+          <div class="content has-text-justified">
+            <p width="is-size-3">
+              To analyze the skill representation and video embedding learned by H2RIL, we sample 6 paired on-robot trajectories and human videos and visualize
+              the skill embeddings and video embeddings using t-SNE. It can be observed that the skill
+              embeddings from the same subtasks are grouped together and clearly separated from the others. Simultaneously, the video embeddings share the same compact subspace as
+              the matched skill embeddings.
+            </p>     
+          </div>
+          <table cellspacing="10" cellpadding="0" align="center">
+            <tbody><tr><td>
+              <tr>
+                  <td style="width:50%">
+                    <h2 align="center">2D</h2>
+                  </td>
+                  <td style="width:50%">
+                    <h2 align="center">3D</h2>
+                  </td>
+              </tr>
+              <tr>
+                <td style="width:50%;vertical-align:middle" align="center">
+                    <!-- Teaser image goes here -->
+                    <img src="static/images/latent_2D.png" alt="Teaser Image" style="width:60%;height:auto; display: block; margin: 0 auto;">
+                </td>
+                  <td style="width:50%;vertical-align:middle" align="center">
+                    <img src="static/images/latent_3d.png" alt="Teaser Image" style="width:65%;height:auto; display: block; margin: 0 auto;">
+                  </td>
+              </tr>
+          </td></tr>
+          </tbody>
+          </table>
+    </div>
+  </div>
+</section>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
